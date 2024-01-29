@@ -1,0 +1,62 @@
+.gnb {
+    height: 60px;
+    border-bottom: 2px inset rgb(239, 239, 239);
+}
+
+.gnb>.contents {
+    width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+
+    /* I want my content to be a flexbox, and all my items in one row */
+    /* The contents are center aligned */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+/* instagram image */
+/* I want the image to be of 150px */
+.contents img {
+    width: 150px;
+    margin-right: auto;
+
+}
+
+/* inputbox */
+/* Styling elements for input field */
+.contents>input {
+
+    width: 300px;
+    height: 40px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(232, 232, 232);
+
+    margin: auto;
+
+}
+
+/* the last div in the content  */
+/* this is the div that houses my icons */
+
+.contents div:last-child {
+
+    width: 200px;
+    font-size: 25px;
+    padding: 0 10px;
+    
+    /* This is an flexbox, inside myv content flexbox */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* icons */
+.contents div >i {
+    margin: 0 5px;
+
+}
